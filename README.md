@@ -537,3 +537,10 @@ To resolve this, ensure that the following files are available (install them if 
 You may also need to load the module by hand - run `modprobe binfmt_misc`.
 
 If you are using WSL to build you may have to enable the service `sudo update-binfmts --enable`
+
+## Codespaces - caveat
+
+if you try tu run this in a codespace you will get errors in `debootstrap` complaining about `noexec` and `nodev`
+
+`sudo mount -i -o remount,exec,dev /workspaces/` will resolve that
+
