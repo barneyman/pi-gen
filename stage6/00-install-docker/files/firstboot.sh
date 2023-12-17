@@ -4,7 +4,7 @@
 touch firstbootdone
 
 # load all the images
-for f in ./*.gz; do docker load < $f; done
+# for f in ./*.gz; do docker load < $f; done
 
 # start docker
-/usr/bin/docker compose up -d
+#/usr/bin/docker compose up -d
